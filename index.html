@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>G-Knock</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="#" />
+  <style>
+    .bg-img-1 {
+      background-image: url(assets/a.jpg);
+    }
+
+    .bg-img-2 {
+      background-image: url(assets/b.jpg);
+    }
+
+    .bg-img-3 {
+      background-image: url(assets/c.jpg);
+    }
+
+    .carousel-image {
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-fade">
+      <nav class="navbar navbar-dark bg-transparent fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Welcome to G-Knock</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">G-Knock</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Read Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Start Learning</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Start Growing</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav justify-content-bottom flex-grow-1 pe-3">
+                <li>
+                  <hr class="dropdown-divider-light">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-image bg-img-1">
+            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h2>G-Knock</h2>
+              <p>Representing Future Technology</p>
+              <button class="btn btn-secondary" href="#">Read Blogs</button>
+            </div>
+          </div>
+          <div class="carousel-item carousel-image bg-img-2">
+            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Learn</h2>
+              <p>Your Gateway to the Future of Technology</p>
+              <button class="btn btn-secondary" href="#">Start Learning</button>
+            </div>
+          </div>
+          <div class="carousel-item carousel-image bg-img-3">
+            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Grow</h2>
+              <p>Explore the Frontiers of Future Technology with G-Knock</p>
+              <button class="btn btn-secondary" href="#">Start Growing</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
